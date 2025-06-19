@@ -1,0 +1,38 @@
+{
+  "name": "node-typescript-template",
+  "version": "1.0.0",
+  "description": "NodeJS/TypeScript project",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm tsx src/main.ts",
+    "build": "pnpm clean && pnpm tsc --project tsconfig.build.json",
+    "lint": "pnpm eslint src/**/*.ts",
+    "lint:fix": "pnpm eslint src/**/*.ts --fix",
+    "format": "pnpm prettier --write \"src/**/*.ts\"",
+    "test": "pnpm vitest run",
+    "test:ui": "pnpm vitest --ui",
+    "test:watch": "pnpm vitest",
+    "test:coverage": "pnpm vitest run --coverage",
+    "clean": "pnpm rimraf dist coverage",
+    "clean:install": "pnpm rimraf node_modules pnpm-lock.yaml && pnpm install",
+    "validate": "pnpm lint && pnpm tsc --project tsconfig.build.json --noEmit"
+  },
+  "author": "arpicode",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@types/node": "^24.0.3",
+    "@vitest/coverage-v8": "3.2.4",
+    "@vitest/eslint-plugin": "^1.2.7",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.1",
+    "vitest": "^3.2.4"
+  }
+}
