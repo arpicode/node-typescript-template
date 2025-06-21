@@ -20,6 +20,7 @@
   },
   "author": "arpicode",
   "license": "MIT",
+  "packageManager": "pnpm@10.12.1",
   "devDependencies": {
     "@eslint/js": "^9.29.0",
     "@types/node": "^24.0.3",
@@ -28,6 +29,7 @@
     "@vitest/ui": "^3.2.4",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-jsdoc": "^51.1.1",
     "eslint-plugin-prettier": "^5.5.0",
     "prettier": "^3.5.3",
     "tsx": "^4.20.3",
