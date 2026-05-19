@@ -1,8 +1,22 @@
 # node-typescript-template
 
-Basic `TypeScript / NodeJS` project setup with:
+Minimal `Node.js / TypeScript` project setup with:
 
-- `ESLint` & `prettier`
+- `ESLint` with typed `typescript-eslint` rules
+- `prettier`
 - `vitest`
 
-Requires `rimraf` to be installed globally and `pnpm` to be used.
+Requirements:
+
+- `Node.js` `20.11+`
+- `pnpm`
+
+Available scripts:
+
+- `pnpm dev`
+- `pnpm build`
+- `pnpm typecheck`
+- `pnpm lint`
+- `pnpm format`
+- `pnpm test`
+- `pnpm validate`
